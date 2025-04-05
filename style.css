@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0d0d0d;
+  color: #fff;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#fire-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  width: 160px;
+  border-radius: 20px;
+  animation: float 4s ease-in-out infinite;
+}
+
+.title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #ff5722;
+  margin-top: 20px;
+  text-shadow: 2px 2px 6px rgba(255, 87, 34, 0.4);
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #fff8e1;
+  margin-bottom: 20px;
+}
+
+.discord-btn {
+  background: linear-gradient(45deg, #ff5722, #ff9800);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.discord-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(255, 87, 34, 0.5);
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.rules {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  border-radius: 20px;
+  max-width: 1000px;
+  margin: 60px auto;
+}
+
+.rules h2, .about h2 {
+  font-size: 2.5rem;
+  color: #ff5722;
+  margin-bottom: 20px;
+}
+
+.rule-card {
+  background: rgba(255, 87, 34, 0.08);
+  border: 1px solid #ff5722;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 700px;
+  color: #fff3e0;
+  transition: transform 0.3s ease;
+}
+
+.rule-card:hover {
+  transform: scale(1.02);
+}
+
+.rule-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ff9800;
+}
+
+.rule-desc {
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+.developers {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  border-radius: 20px;
+  margin: 60px auto;
+  max-width: 1100px;
+}
+
+.developers h2 {
+  color: #ff5722;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.dev-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.dev-card {
+  background: rgba(255, 87, 34, 0.1);
+  border: 1px solid #ff5722;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 260px;
+  box-shadow: 0 0 10px rgba(255, 87, 34, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dev-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 16px rgba(255, 87, 34, 0.6);
+}
+
+.dev-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ff9800;
+  margin-bottom: 10px;
+}
+
+.dev-name {
+  font-size: 1.2rem;
+  color: #fff8e1;
+  margin: 8px 0;
+}
+
+.dev-role {
+  color: #ffcc80;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.dev-link {
+  color: #ff9800;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.dev-link:hover {
+  color: #fff3e0;
+}
+
+.about {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  border-radius: 20px;
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  color: #ff5722;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #fbe9e7;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
